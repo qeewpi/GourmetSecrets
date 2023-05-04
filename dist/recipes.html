@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GourmetSecrets</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="px-24 py-24">
+      <nav class="pb-24">
+        <div class="flex flex-wrap items-center justify-between">
+          <div class="">
+            <div class="flex text-3xl font-extrabold font-logo lg:text-4xl">
+              <h1 class="text-gray-900">Gourmet</h1>
+              <h1 class="text-yellow-sea-500">Secrets</h1>
+            </div>
+          </div>
+
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="flex space-x-24">
+              <li>
+                <a
+                  href="#"
+                  class="font-semibold transition ease-in-out hover:transition-all text-yellow-sea-500"
+                  >Recipes</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="font-semibold text-gray-900 transition ease-in-out hover:transition-all hover:text-yellow-sea-500"
+                  >Profile</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="font-semibold text-gray-900 transition ease-in-out hover:transition-all hover:text-yellow-sea-500"
+                  >Favorites</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="flex justify-center">
+        <form class="flex items-center w-1/2">
+          <label for="search" class="sr-only">Search</label>
+          <div class="relative w-full">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5 text-gray-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <input
+              type=""
+              id=""
+              class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-sea-500 focus:border-yellow-sea-500 block w-full pl-10 p-2.5"
+              placeholder="Search"
+              required
+            />
+          </div>
+          <button
+            type=""
+            class="p-2.5 ml-2 text-sm font-medium text-white bg-yellow-sea-500 rounded-lg border border-yellow-sea-600 hover:bg-yellow-sea-600 focus:ring-4 focus:outline-none focus:ring-yellow-sea-300"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              ></path>
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+        </form>
+      </div>
+
+      <div class="pt-24">
+        <div class="grid space-y-4 grid-row-3">
+          <div class="grid grid-cols-2 space-x-4 lg:grid-cols-3">
+            <div class="border border-gray-300 rounded-lg">
+              <div class="flex flex-col p-2 py-10 space-x-2 lg:flex-row">
+                <div
+                  class="bg-gray-100 border border-gray-300 rounded-lg py-28 lg:py-0 lg:w-3/5"
+                ></div>
+                <div class="flex flex-col p-4 space-y-2 lg:w-2/5">
+                  <div class="flex">
+                    <a href="" class="flex grow"> Title </a>
+                    <img src="../svg/heart.svg" class="opacity-[86%]" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                    <a href="" class="text-sm italic text-gray-400">
+                      Ingredients
+                    </a>
+                    <a href="" class="text-sm italic text-gray-400"> User X </a>
+                  </div>
+
+                  <div class="flex flex-col lg:pt-12 lg:pb-8">
+                    <div class="flex space-x-2">
+                      <img src="../svg/clock.svg" class="w-3" alt="" />
+                      <a href="" class="text-sm"> Time </a>
+                    </div>
+                    <div class="flex space-x-2">
+                      <img src="../svg/user.svg" class="w-3" alt="" />
+                      <a href="" class="text-sm"> Servings </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border border-gray-300 rounded-lg">
+              <div class="flex flex-col p-2 py-10 space-x-2 lg:flex-row">
+                <div
+                  class="bg-gray-100 border border-gray-300 rounded-lg py-28 lg:py-0 lg:w-3/5"
+                ></div>
+                <div class="flex flex-col p-4 space-y-2 lg:w-2/5">
+                  <div class="flex">
+                    <a href="" class="flex grow"> Title </a>
+                    <img src="../svg/heart.svg" class="opacity-[86%]" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                    <a href="" class="text-sm italic text-gray-400">
+                      Ingredients
+                    </a>
+                    <a href="" class="text-sm italic text-gray-400"> User X </a>
+                  </div>
+
+                  <div class="flex flex-col lg:pt-12 lg:pb-8">
+                    <div class="flex space-x-2">
+                      <img src="../svg/clock.svg" class="w-3" alt="" />
+                      <a href="" class="text-sm"> Time </a>
+                    </div>
+                    <div class="flex space-x-2">
+                      <img src="../svg/user.svg" class="w-3" alt="" />
+                      <a href="" class="text-sm"> Servings </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border border-gray-300 rounded-lg">
+              <div class="flex flex-col p-2 py-10 space-x-2 lg:flex-row">
+                <div
+                  class="bg-gray-100 border border-gray-300 rounded-lg py-28 lg:py-0 lg:w-3/5"
+                ></div>
+                <div class="flex flex-col p-4 space-y-2 lg:w-2/5">
+                  <div class="flex">
+                    <a href="" class="flex grow"> Title </a>
+                    <img src="../svg/heart.svg" class="opacity-[86%]" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                    <a href="" class="text-sm italic text-gray-400">
+                      Ingredients
+                    </a>
+                    <a href="" class="text-sm italic text-gray-400"> User X </a>
+                  </div>
+
+                  <div class="flex flex-col lg:pt-12 lg:pb-8">
+                    <div class="flex space-x-2">
+                      <img src="../svg/clock.svg" class="w-3" alt="" />
+                      <a href="" class="text-sm"> Time </a>
+                    </div>
+                    <div class="flex space-x-2">
+                      <img src="../svg/user.svg" class="w-3" alt="" />
+                      <a href="" class="text-sm"> Servings </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 space-x-4 lg:grid-cols-3">
+            <div class="border border-gray-300 rounded-lg">
+              <div class="flex flex-col p-2 py-10 space-x-2 lg:flex-row">
+                <div
+                  class="bg-gray-100 border border-gray-300 rounded-lg py-28 lg:py-0 lg:w-3/5"
+                ></div>
+                <div class="flex flex-col p-4 space-y-2 lg:w-2/5">
+                  <div class="flex">
+                    <a href="" class="flex grow"> Title </a>
+                    <img src="../svg/heart.svg" class="opacity-[86%]" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                    <a href="" class="text-sm italic text-gray-400">
+                      Ingredients
+                    </a>
+                    <a href="" class="text-sm italic text-gray-400"> User X </a>
+                  </div>
+
+                  <div class="flex flex-col lg:pt-12 lg:pb-8">
+                    <div class="flex space-x-2">
+                      <img src="../svg/clock.svg" class="w-3" alt="" />
+                      <a href="" class="text-sm"> Time </a>
+                    </div>
+                    <div class="flex space-x-2">
+                      <img src="../svg/user.svg" class="w-3" alt="" />
+                      <a href="" class="text-sm"> Servings </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border border-gray-300 rounded-lg">
+              <div class="flex flex-col p-2 py-10 space-x-2 lg:flex-row">
+                <div
+                  class="bg-gray-100 border border-gray-300 rounded-lg py-28 lg:py-0 lg:w-3/5"
+                ></div>
+                <div class="flex flex-col p-4 space-y-2 lg:w-2/5">
+                  <div class="flex">
+                    <a href="" class="flex grow"> Title </a>
+                    <img src="../svg/heart.svg" class="opacity-[86%]" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                    <a href="" class="text-sm italic text-gray-400">
+                      Ingredients
+                    </a>
+                    <a href="" class="text-sm italic text-gray-400"> User X </a>
+                  </div>
+
+                  <div class="flex flex-col lg:pt-12 lg:pb-8">
+                    <div class="flex space-x-2">
+                      <img src="../svg/clock.svg" class="w-3" alt="" />
+                      <a href="" class="text-sm"> Time </a>
+                    </div>
+                    <div class="flex space-x-2">
+                      <img src="../svg/user.svg" class="w-3" alt="" />
+                      <a href="" class="text-sm"> Servings </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border border-gray-300 rounded-lg">
+              <div class="flex flex-col p-2 py-10 space-x-2 lg:flex-row">
+                <div
+                  class="bg-gray-100 border border-gray-300 rounded-lg py-28 lg:py-0 lg:w-3/5"
+                ></div>
+                <div class="flex flex-col p-4 space-y-2 lg:w-2/5">
+                  <div class="flex">
+                    <a href="" class="flex grow"> Title </a>
+                    <img src="../svg/heart.svg" class="opacity-[86%]" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                    <a href="" class="text-sm italic text-gray-400">
+                      Ingredients
+                    </a>
+                    <a href="" class="text-sm italic text-gray-400"> User X </a>
+                  </div>
+
+                  <div class="flex flex-col lg:pt-12 lg:pb-8">
+                    <div class="flex space-x-2">
+                      <img src="../svg/clock.svg" class="w-3" alt="" />
+                      <a href="" class="text-sm"> Time </a>
+                    </div>
+                    <div class="flex space-x-2">
+                      <img src="../svg/user.svg" class="w-3" alt="" />
+                      <a href="" class="text-sm"> Servings </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  </body>
+</html>

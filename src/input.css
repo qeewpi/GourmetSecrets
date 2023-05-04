@@ -13,3 +13,9 @@
   font-family: Eclat;
   src: url("../fonts/Eclat_ICG.ttf") format("opentype");
 }
+
+@layer base {
+  html {
+    @apply text-gray-900;
+  }
+}
