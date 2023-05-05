@@ -299,7 +299,10 @@
       </div> -->
 
       <div class="pt-24" id="recipe-container">
-        <div class="grid grid-cols-2 lg:grid-cols-3" id="recipe-grid"></div>
+        <div
+          class="grid grid-cols-2 gap-8 lg:grid-cols-3"
+          id="recipe-grid"
+        ></div>
       </div>
 
       <footer class="pt-24 pb-4">
@@ -404,7 +407,7 @@
 
         recipes.forEach((recipe) => {
           const card = `
-          <div class="mb-8 mr-8 border border-gray-300 rounded-lg">
+          <div class="border border-gray-300 rounded-lg">
             <div class="relative">
               <img src="${recipe.image}" alt="Recipe image" class="object-cover w-full h-64 rounded-t-lg">
             </div>
